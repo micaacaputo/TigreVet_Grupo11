@@ -76,16 +76,20 @@ body {
     font-size: 18px;
    line-height: 1.6;
 }
-
+.conclusion{
+    font-size: 1.4rem;
+}
 
 /*CARDS*/
-
-.card-body{
+.card, .card-body{
     background-color: #FAE6A6;
     color: var(--color-black);
 }
 .card-size {
     height: 20rem;
+}
+.card-size-educ {
+    height: 100%;
 }
 
 /*HOME*/
