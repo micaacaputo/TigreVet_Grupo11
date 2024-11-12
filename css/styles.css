@@ -79,6 +79,9 @@ body {
 .conclusion{
     font-size: 1.4rem;
 }
+.text-justify {
+    text-align: justify;
+}
 
 /*CARDS*/
 .card, .card-body{
