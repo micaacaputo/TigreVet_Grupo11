@@ -19,6 +19,9 @@ body {
     background-color: var(--color-white);
     margin-top: 110px;
 }
+.viewport-section{
+    min-height: calc(100vh - 208px);
+}
 
 /*NAV*/
 .bg-nav {
@@ -110,7 +113,6 @@ body {
     background-color: var(--color-light-yellow);
 }
 .home {
-    min-height: 79vh;
     display: flex;
     align-items: center;
     justify-content: center;
