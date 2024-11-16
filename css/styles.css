@@ -11,6 +11,7 @@
     --color-yellow: #FDCF3B;
     --color-light-yellow: #FAE6A6;
     --color-black: #000000;
+    --hover-button: #FFE066;
 }
 
 body {
@@ -104,13 +105,14 @@ body {
 }
 
 /*HOME*/
-.btn-home {
+.btn-form {
     background-color: var(--color-yellow);
     font-size: 18px;
     border-color: var(--color-black);
 }
-.btn-home:hover{
-    background-color: var(--color-light-yellow);
+.btn-form:hover{
+    background-color: var(--hover-button);
+    border-color: var(--color-black);
 }
 .home {
     display: flex;
