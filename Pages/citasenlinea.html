@@ -52,124 +52,113 @@
           </nav>
     </header>
 
-<section class="container">
-    <h1 class="text-center my-4 title">Citas en Línea</h1>
-    <p class="text mb-5 text-center">En TigreVet, nos aseguramos de que la atención a tu mascota sea rápida y sencilla. ¡Agenda tu cita hoy y dale a tu peludo la atención que se merece!</p>
-    <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-md-6 col-lg-8 order-md-1">
-            <div class="card card-size-booking">
-                <div class="card-body p-4">
-                    <p class="title">Información de la Reserva</p>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                        </div>
-                        <div class="col">
-                            <label for="raza" class="form-label">Raza</label>
-                            <input type="text" class="form-control" id="raza" placeholder="Raza">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="col">
-                            <label for="servicio" class="form-label">Servicio</label>
-                            <select class="form-select" id="servicio">
-                                <option selected>Servicio</option>
-                                <option value="Consulta">Consulta</option>
-                                <option value="Vacunación">Cirugía</option>
-                                <option value="Control">Vacunación</option>
-                                <option value="Control">Peluquería</option>
-                                <option value="Control">Hospedaje</option>
-                                <option value="Control">Adopción</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <label for="fecha" class="form-label">Fecha</label>
-                            <input type="date" class="form-control" id="fecha">
-                        </div>
-                        <div class="col">
-                            <label for="hora" class="form-label">Hora</label>
-                            <select class="form-select" id="hora">
-                                <option selected>Hora</option>
-                                <option value="09:00">09:00</option>
-                                <option value="09:30">09:30</option>
-                                <option value="10:00">10:00</option>
-                                <option value="10:30">10:30</option>
-                                <option value="11:00">11:00</option>
-                                <option value="11:30">11:30</option>
-                                <option value="12:00">12:00</option>
-                                <option value="12:30">12:30</option>
-                                <option value="13:00">13:00</option>
-                                <option value="13:30">13:30</option>
-                                <option value="14:00">14:00</option>
-                                <option value="14:30">14:30</option>
-                                <option value="15:00">15:00</option>
-                                <option value="15:30">15:30</option>
-                                <option value="16:00">16:00</option>
-                                <option value="16:30">16:30</option>
-                                <option value="17:00">17:00</option>
-                                <option value="17:30">17:30</option>
-                                <option value="18:00">18:00</option>
-                            </select>
-                        </div>
-                    </div>
+    <section class="container">
+      <h1 class="text-center my-4 title">Citas en Línea</h1>
+      <p class="text mb-5 text-center">En TigreVet, nos aseguramos de que la atención a tu mascota sea rápida y sencilla. ¡Agenda tu cita hoy y dale a tu peludo la atención que se merece!</p>
+      
+      <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-6 col-lg-8 order-md-1">
+              <div class="card">
+                  <div class="card-body p-4">
+                      <h2 class="title-card mb-4">Información de la Reserva</h2>
+                      
+                      <div class="row mb-3">
+                          <div class="col">
+                              <label for="nombre" class="form-label">Nombre</label>
+                              <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre">
+                          </div>
+                          <div class="col">
+                              <label for="raza" class="form-label">Raza</label>
+                              <input type="text" class="form-control" id="raza" placeholder="Raza" aria-label="Raza">
+                          </div>
+                      </div>
+                      <div class="row mb-3">
+                          <div class="col">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email">
+                          </div>
+                          <div class="col">
+                              <label for="servicio" class="form-label">Servicio</label>
+                              <select class="form-select" id="servicio" aria-label="Seleccionar servicio">
+                                  <option selected>Servicio</option>
+                                  <option value="Consulta">Consulta</option>
+                                  <option value="Cirugía">Cirugía</option>
+                                  <option value="Vacunación">Vacunación</option>
+                                  <option value="Peluquería">Peluquería</option>
+                                  <option value="Hospedaje">Hospedaje</option>
+                                  <option value="Adopción">Adopción</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row mb-3">
+                          <div class="col">
+                              <label for="fecha" class="form-label">Fecha</label>
+                              <input type="date" class="form-control" id="fecha" aria-label="Seleccionar fecha">
+                          </div>
+                          <div class="col">
+                              <label for="hora" class="form-label">Hora</label>
+                              <select class="form-select" id="hora" aria-label="Seleccionar hora">
+                                  <option selected>Hora</option>
+                                  <option value="09:00">09:00</option>
+                                  <option value="09:30">09:30</option>
+                                  <option value="10:00">10:00</option>
+                                  <option value="18:00">18:00</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+              </div> 
+          </div>
+  
+          <div class="col-md-6 col-lg-4 order-md-2">
+              <div class="card">
+                  <div class="card-body bg-booking p-4">
+                      <h2 class="title-card mb-4">Confirmación de Reserva</h2>
+                      <div class="row">
+                          <div class="col">
+                              <p class="fw-bold">Fecha</p>
+                          </div>
+                          <div class="col text-end">
+                              <p class="fw-bold">Hora</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              <span>Value</span>
+                          </div>
+                          <div class="col text-end">
+                              <span>Value</span>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                          <div class="col">
+                              <p class="fw-bold">Servicio</p>
+                          </div>
+                          <div class="col text-end">
+                              <span>$0</span>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                          <div class="col">
+                              <p class="fw-bold">Total</p>
+                          </div>
+                          <div class="col text-end">
+                              <span>$0</span>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col">
+                              <button type="button" class="btn btn-home fw-bold w-100">Confirmar</button>
+                          </div>
+                      </div>
+                  </div>
                 </div>
-            </div> 
-        </div>
-        <div class="col-md-6 col-lg-4 order-md-2">
-            <div class="card card-size-booking">
-                <div class="card-body bg-booking p-4">
-                    <p class="title">Confirmación de Reserva</p>
-                    <div class="row">
-                        <div class="col">
-                            <p>Fecha</p>
-                        </div>
-                        <div class="col text-end">
-                            <p>Hora</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <span>Value</span>
-                        </div>
-                        <div class="col text-end">
-                            <span>Value</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col">
-                            <p>Servicio</p>
-                        </div>
-                        <div class="col text-end">
-                            <span>$0</span>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col">
-                            <p>Total</p>
-                        </div>
-                        <div class="col text-end">
-                            <span>$0</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <button type="button" class="btn btn-home fw-bold w-100">Confirmar</button>
-                        </div>
-                    </div>
-                </div>
-              </div>
-        </div>
-    </div>
-</section>
+          </div>
+      </div>
+  </section>
+  
 
     <footer class="footer py-2">
         <div class="row d-none d-lg-flex p-0 m-0">

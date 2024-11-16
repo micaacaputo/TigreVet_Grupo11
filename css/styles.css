@@ -65,7 +65,7 @@ body {
 .title {
     font-size: 2rem;
 }
-.subtitle {
+.subtitle-home {
     font-size: 1.5rem;
     font-style: italic;
     margin-top: 0.5rem;
@@ -73,14 +73,18 @@ body {
     font-weight: 400;
 }
 .text {
-    font-size: 18px;
+   font-size: 18px;
    line-height: 1.6;
 }
 .conclusion{
-    font-size: 1.4rem;
+    font-size: 23px;
 }
 .text-justify {
     text-align: justify;
+}
+.title-card{
+    font-size: 25px;
+    font-weight: 600;
 }
 
 /*CARDS*/
@@ -88,11 +92,11 @@ body {
     background-color: #FAE6A6;
     color: var(--color-black);
 }
-.card-size {
-    height: 20rem;
+.card-size-serv {
+    height: 10.5rem;
 }
-.card-size-educ {
-    height: 100%;
+.card-size-serv2 {
+    height: 15rem;
 }
 
 /*HOME*/
@@ -116,21 +120,23 @@ body {
     font-size: 30px;
     font-weight: 700;
 }
+.subtitle-service {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 
 /*CITAS*/
 .bg-booking{
     background-color: var(--color-light-gray);
 }
-/* .card-size-booking{
-    height: 24rem;
-} */
 .margin-section {
     padding: 0 200px;
 }
 
 /*FOOTER*/
 footer {
-    background-color:#BDC3C7;
+    background-color:var(--color-gray);
 }
 .img-footer{
     width: 60%;
