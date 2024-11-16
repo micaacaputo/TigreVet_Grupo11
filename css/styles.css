@@ -17,6 +17,7 @@ body {
     font-family: "Roboto", serif;
     color: var(--color-black);
     background-color: var(--color-white);
+    margin-top: 110px;
 }
 
 /*NAV*/
@@ -109,7 +110,7 @@ body {
     background-color: var(--color-light-yellow);
 }
 .home {
-    min-height: 83vh;
+    min-height: 79vh;
     display: flex;
     align-items: center;
     justify-content: center;
