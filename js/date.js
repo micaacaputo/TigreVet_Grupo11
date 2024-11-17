@@ -6,7 +6,7 @@ const confirmationTime = document.getElementById('confirmation-time');
 dateInput.addEventListener('change', () => {
     const selectedDate = dateInput.value; 
     if (selectedDate) {
-        const formattedDate = new Date(selectedDate).toLocaleDateString('es-AR', {
+        const formattedDate = new Date(selectedDate + 'T00:00:00').toLocaleDateString('es-AR', {
             day: '2-digit',
             month: '2-digit',
             year: 'numeric'

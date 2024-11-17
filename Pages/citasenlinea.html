@@ -56,14 +56,14 @@
 <main>
     <section class="container viewport-section">
       <h1 class="text-center my-4 title">Citas en Línea</h1>
-      <p class="text text-center margin-sub">      En TigreVet, nos aseguramos de que la atención a tu mascota sea rápida y sencilla. ¡Agendá tu cita hoy y dale a tu peludo la atención que se merece!</p>
+      <p class="text text-center margin-sub">En TigreVet, nos aseguramos de que la atención a tu mascota sea rápida y sencilla. ¡Agendá tu cita hoy y dale a tu peludo la atención que se merece!</p>
       
       <div class="row">
           <div class="col">
               <div class="card mb-4">
                   <div class="card-body p-4">
                       <h2 class="title-card mb-4">Información de la reserva</h2>
-                      
+                      <form id="date-form" method="post" action="#">
                       <div class="row">
                           <div class="col-md-12 col-lg-4 mb-4">
                               <label for="nombre" class="form-label">Nombre</label>
@@ -105,7 +105,6 @@
                           </div>
                       </div>
                       <h3 class="title-card fs-5 mt-3 mb-4">Seleccione el servicio que desea realizar</h3>
-                      <form id="services-form">
                         <div class="row">
                           <div class="col-md-12 col-lg-4">
                             <div class="form-check mb-3">
@@ -140,7 +139,6 @@
                           </div>
                           </div>
                         </div>
-                    </form>
                   </div>
               </div> 
           </div>
@@ -186,9 +184,10 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col">
-                            <button type="button" class="btn btn-form fw-bold w-100">Confirmar</button>
+                            <button type="submit" class="btn btn-form fw-bold w-100">Confirmar</button>
                         </div>
                     </div>
+                  </form>
                 </div>
             </div>
         </div>
@@ -239,6 +238,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../js/calculadora.js"></script>
     <script src="../js/date.js"></script>
+    <script src="../js/form.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
