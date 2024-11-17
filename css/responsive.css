@@ -6,6 +6,9 @@
     .iframe-maps {
         width: 450px;
     }
+    .viewport-section{
+        min-height: calc(100vh - 187px);
+    }
   }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -89,7 +92,7 @@
     }
 }
   
-@media (min-width: 992px) and (max-width: 1106px) {
+@media (min-width: 992px) and (max-width: 1124px) {
     .nav-link {
         font-size: 13px;
     }
@@ -100,5 +103,11 @@
     }
     .iframe-maps {
         width: 600px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1353px) {
+    .viewport-section{
+        min-height: calc(100vh - 180px);
     }
   }
