@@ -55,13 +55,13 @@
 <main>
     <section class="container viewport-section">
       <h1 class="text-center my-4 title">Citas en Línea</h1>
-      <p class="text mb-5 text-center">En TigreVet, nos aseguramos de que la atención a tu mascota sea rápida y sencilla. ¡Agenda tu cita hoy y dale a tu peludo la atención que se merece!</p>
+      <p class="text text-center margin-sub">En TigreVet, nos aseguramos de que la atención a tu mascota sea rápida y sencilla. ¡Agenda tu cita hoy y dale a tu peludo la atención que se merece!</p>
       
       <div class="row d-flex align-items-center justify-content-center ">
           <div class="col-md-6 col-lg-8 order-md-1">
               <div class="card">
                   <div class="card-body p-4">
-                      <h2 class="title-card mb-5">Información de la Reserva</h2>
+                      <h2 class="title-card mb-4">Información de la Reserva</h2>
                       
                       <div class="row mb-4">
                           <div class="col">
@@ -74,21 +74,13 @@
                           </div>
                       </div>
                       <div class="row mb-4">
+                        <div class="col">
+                          <label for="email" class="form-label">Edad</label>
+                          <input type="number" class="form-control" id="edad" placeholder="Edad" aria-label="Email">
+                      </div>
                           <div class="col">
                               <label for="email" class="form-label">Email</label>
                               <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email">
-                          </div>
-                          <div class="col">
-                              <label for="servicio" class="form-label">Servicio</label>
-                              <select class="form-select" id="servicio" aria-label="Seleccionar servicio">
-                                  <option selected>Servicio</option>
-                                  <option value="Consulta">Consulta</option>
-                                  <option value="Cirugía">Cirugía</option>
-                                  <option value="Vacunación">Vacunación</option>
-                                  <option value="Peluquería">Peluquería</option>
-                                  <option value="Hospedaje">Hospedaje</option>
-                                  <option value="Adopción">Adopción</option>
-                              </select>
                           </div>
                       </div>
                       <div class="row mb-4">
@@ -107,56 +99,94 @@
                               </select>
                           </div>
                       </div>
+                      <h3 class="title-card fs-5 mt-5 mb-4">Seleccione el servicio que desea realizar</h3>
+                      <form id="services-form">
+                        <div class="row">
+                          <div class="col">
+                            <div class="form-check mb-3">
+                              <input class="form-check-input service-checkbox" type="checkbox" id="consulta" data-price="3000">
+                              <label class="form-check-label" for="consulta"> Consulta: <span class="fw-semibold">$3.000</span></label>
+                          </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-check mb-3">
+                              <input class="form-check-input service-checkbox" type="checkbox" id="cirugia" data-price="20000">
+                              <label class="form-check-label" for="cirugia">Cirugía: <span class="fw-semibold">$20.000</span></label>
+                          </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-check mb-3">
+                              <input class="form-check-input service-checkbox" type="checkbox" id="vacunacion" data-price="5000">
+                              <label class="form-check-label" for="vacunacion">Vacunación: <span class="fw-semibold">$5.000</span></label>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="form-check mb-3">
+                              <input class="form-check-input service-checkbox" type="checkbox" id="peluqueria" data-price="6000">
+                              <label class="form-check-label" for="peluqueria">Peluquería: <span class="fw-semibold">$6.000</span></label>
+                          </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="form-check mb-3">
+                              <input class="form-check-input service-checkbox" type="checkbox" id="hospedaje" data-price="10000">
+                              <label class="form-check-label" for="hospedaje">Hospedaje: <span class="fw-semibold">$10.000</span></label>
+                          </div>
+                          </div>
+                        </div>
+                    </form>
                   </div>
               </div> 
           </div>
   
           <div class="col-md-6 col-lg-4 order-md-2">
-              <div class="card">
-                  <div class="card-body bg-booking p-4">
-                      <h2 class="title-card mb-5">Confirmación de Reserva</h2>
-                      <div class="row mb-3">
-                          <div class="col">
-                              <p class="fw-bold">Fecha</p>
-                          </div>
-                          <div class="col text-end">
-                              <p class="fw-bold">Hora</p>
-                          </div>
-                      </div>
-                      <div class="row mb-3">
-                          <div class="col">
-                              <span>Value</span>
-                          </div>
-                          <div class="col text-end">
-                              <span>Value</span>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-3">
-                          <div class="col">
-                              <p class="fw-bold">Servicio</p>
-                          </div>
-                          <div class="col text-end">
-                              <span>$0</span>
-                          </div>
-                      </div>
-                      <hr>
-                      <div class="row mb-3">
-                          <div class="col">
-                              <p class="fw-bold">Total</p>
-                          </div>
-                          <div class="col text-end">
-                              <span>$0</span>
-                          </div>
-                      </div>
-                      <div class="row mb-3">
-                          <div class="col">
-                              <button type="button" class="btn btn-form fw-bold w-100">Confirmar</button>
-                          </div>
-                      </div>
-                  </div>
+            <div class="card">
+                <div class="card-body bg-booking p-4">
+                    <h2 class="title-card mb-4">Confirmación de Reserva</h2>
+                    <div class="row mb-1">
+                        <div class="col">
+                            <p class="fw-bold">Fecha</p>
+                        </div>
+                        <div class="col text-end">
+                            <p class="fw-bold">Hora</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <span id="confirmation-date" class="text-muted">Seleccione una fecha</span>
+                        </div>
+                        <div class="col text-end">
+                            <span id="confirmation-time" class="text-muted">Seleccione una hora</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="fw-bold">Servicios</p>
+                    <div id="services-summary">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <p id="service-placeholder" class="text-muted mb-1">No se seleccionaron servicios</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <p class="fw-bold">Total</p>
+                        </div>
+                        <div class="col text-end">
+                            <span id="total-summary">$0</span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <button type="button" class="btn btn-form fw-bold w-100">Confirmar</button>
+                        </div>
+                    </div>
                 </div>
-          </div>
+            </div>
+        </div>
+        
       </div>
   </section>
   
@@ -201,7 +231,9 @@
           </div>
         </div>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../js/calculadora.js"></script>
+    <script src="../js/date.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
