@@ -91,10 +91,13 @@ body {
     font-size: 25px;
     font-weight: 600;
 }
+.margin-sub {
+    margin-bottom: 3rem;
+}
 
 /*CARDS*/
 .card, .card-body{
-    background-color: #FAE6A6;
+    background-color: var(--color-light-yellow);
     color: var(--color-black);
 }
 .card-size-serv {
@@ -105,15 +108,6 @@ body {
 }
 
 /*HOME*/
-.btn-form {
-    background-color: var(--color-yellow);
-    font-size: 18px;
-    border-color: var(--color-black);
-}
-.btn-form:hover{
-    background-color: var(--hover-button);
-    border-color: var(--color-black);
-}
 .home {
     display: flex;
     align-items: center;
@@ -150,4 +144,29 @@ footer {
 }
 .footer-margin{
     margin-left: 400px;
+}
+
+/*CHECK*/
+.form-check-input:checked {
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.3rem rgba(253, 207, 59, 0.5); 
+}
+
+.iframe-maps {
+    width: 600px;
+    height: 435px;
+}
+
+.btn-form {
+    background-color: var(--color-yellow);
+    font-size: 18px;
+    border-color: var(--color-black);
+}
+.btn-form:hover{
+    background-color: var(--hover-button);
+    border-color: var(--color-black);
 }
