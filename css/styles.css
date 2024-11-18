@@ -94,7 +94,17 @@ body {
 .margin-sub {
     margin-bottom: 3rem;
 }
-
+.info {
+    font-size: 22px;
+    font-weight: 700;
+}
+.subinfo {
+    font-size: 20px;
+    font-weight: 700;
+}
+.textinfo {
+    font-size: 16px;
+}
 /*CARDS*/
 .card, .card-body{
     background-color: var(--color-light-yellow);
