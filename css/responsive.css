@@ -1,4 +1,9 @@
 /*RESPONSIVE*/
+@media (min-width: 1562px) and (max-width: 1670px) {
+    .viewport-section{
+        min-height: calc(100vh - 196px);
+    }
+  }
 @media (min-width: 1024px) and (max-width: 1561px) {
     .footer-margin{
         margin-left: 250px;
@@ -109,5 +114,10 @@
   @media (min-width: 1024px) and (max-width: 1353px) {
     .viewport-section{
         min-height: calc(100vh - 180px);
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1023px) {
+    .viewport-section{
+        min-height: calc(100vh - 190px);
     }
   }
