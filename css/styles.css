@@ -21,7 +21,7 @@ body {
     margin-top: 110px;
 }
 .viewport-section{
-    min-height: calc(100vh - 208px);
+    min-height: calc(100vh - 190px);
 }
 
 /*NAV*/
@@ -113,9 +113,6 @@ body {
 .card-size-serv {
     height: 10.5rem;
 }
-.card-size-serv2 {
-    height: 15rem;
-}
 
 /*HOME*/
 .home {
@@ -148,12 +145,14 @@ footer {
     background-color:var(--color-gray);
 }
 .img-footer{
-    width: 60%;
+    width: 90%;
     padding: 8px;
     margin-top: 5px;
 }
-.footer-margin{
-    margin-left: 400px;
+.img-footer-logo{
+    width: 110%;
+    padding: 8px;
+    margin-top: 5px;
 }
 
 /*CHECK*/
