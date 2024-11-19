@@ -136,7 +136,7 @@ body {
 }
 
 /*CITAS*/
-.bg-booking{
+.bg-gray{
     background-color: var(--color-light-gray);
 }
 .margin-section {
@@ -179,4 +179,9 @@ footer {
 .btn-form:hover{
     background-color: var(--hover-button);
     border-color: var(--color-black);
+}
+
+.color-hr {
+    border-color: var(--color-black);
+    border-width: 2px;
 }
