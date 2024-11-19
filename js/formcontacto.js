@@ -20,25 +20,25 @@ $(document).ready(function () {
         };
 
         if (!nombre.val().trim()) {
-            showError(nombre, 'El nombre es obligatorio');
+            showError(nombre, 'El nombre es obligatorio.');
             isValid = false;
         } else {
             removeError(nombre);
         }
 
         if (!email.val().trim()) {
-            showError(email, 'El email es obligatorio');
+            showError(email, 'El email es obligatorio.');
             isValid = false;
         } else if (!/\S+@\S+\.\S+/.test(email.val())) {
             removeError(email);
-            showError(email, 'El formato del email no es válido');
+            showError(email, 'El formato del email no es válido.');
             isValid = false;
         } else {
             removeError(email);
         }
 
         if (!mensaje.val().trim()) {
-            showError(mensaje, 'El mensaje es obligatorio');
+            showError(mensaje, 'El mensaje es obligatorio.');
             isValid = false;
         } else {
             removeError(mensaje);

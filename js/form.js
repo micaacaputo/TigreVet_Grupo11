@@ -6,6 +6,7 @@ $('#date-form').on('submit', function (event) {
     const email = $('#email').val().trim();
     const fecha = $('#fecha').val().trim();
     const hora = $('#hora').val();
+    const today = new Date().toISOString().split('T')[0];
     const servicios = [];
     $('.service-checkbox:checked').each(function () {
         servicios.push($(this).attr('id'));
@@ -46,6 +47,9 @@ $('#date-form').on('submit', function (event) {
     if (!fecha) {
         showError($('#fecha'), 'La fecha es obligatoria.');
         isValid = false;
+    } else if (fecha < today) {
+        showError($('#fecha'), 'La fecha no puede estar en el pasado.');
+        isValid = false;
     } else {
         removeError($('#fecha'));
     }
@@ -68,8 +72,7 @@ $('#date-form').on('submit', function (event) {
 
     if (isValid) {
         alert('¡Cita enviada con éxito!');
-        
-        $('#main-form')[0].reset();
+        $('#date-form')[0].reset();
         $('.service-checkbox').prop('checked', false);
         $('#services-summary').html('<p id="service-placeholder" class="text-muted">No se seleccionaron servicios</p>');
         $('#total-summary').text('$0');
