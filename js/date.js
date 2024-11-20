@@ -1,5 +1,7 @@
 const dateInput = document.getElementById('fecha');
 const confirmationDate = document.getElementById('confirmation-date');
+const horaInput = document.getElementById('hora');
+const confirmationTime = document.getElementById('confirmation-time');
 
 dateInput.addEventListener('change', () => {
     const selectedDate = dateInput.value;
@@ -29,5 +31,16 @@ dateInput.addEventListener('change', () => {
     } else {
         confirmationDate.textContent = 'Seleccione una fecha';
         confirmationDate.classList.add('text-muted');
+    }
+});
+
+horaInput.addEventListener('change', () => {
+    const selectedHora = horaInput.value;
+    if (selectedHora && selectedHora !== 'Hora') {
+        confirmationTime.textContent = selectedHora;
+        confirmationTime.classList.remove('text-muted', 'text-danger');
+    } else {
+        confirmationTime.textContent = 'Seleccione una hora';
+        confirmationTime.classList.add('text-muted');
     }
 });

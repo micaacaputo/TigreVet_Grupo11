@@ -61,9 +61,16 @@
       
       <div class="row">
           <div class="col">
-              <div class="card mb-4">
+              <div class="card shadow mb-4">
                   <div class="card-body p-4">
-                      <h2 class="title-card mb-4">Información de la reserva</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <h2 class="title-card mb-4">Información de la reserva</h2>
+                        </div>
+                        <div class="col-md-12 col-lg-6 text-start text-lg-end">
+                            <button type="button" class="btn btn-danger fw-bold mb-3 px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cancelar una cita</button>
+                        </div>
+                    </div>
                       <form id="date-form" method="post" action="#">
                       <div class="row">
                           <div class="col-md-12 col-lg-4 mb-4">
@@ -71,24 +78,28 @@
                               <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre">
                           </div>
                           <div class="col-md-12 col-lg-4 mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email">
+                        </div>
+                        <div class="col-md-12 col-lg-4 mb-4">
+                            <label for="tel" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Teléfono" aria-label="Teléfono">
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12 col-lg-3 mb-4">
                               <label for="raza" class="form-label">Raza</label>
                               <input type="text" class="form-control" id="raza" placeholder="Raza" aria-label="Raza">
                           </div>
-                          <div class="col-md-12 col-lg-4 mb-4">
-                              <label for="email" class="form-label">Edad</label>
-                              <input type="number" class="form-control" id="edad" placeholder="Edad" aria-label="Edad">
-                      </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-md-12 col-lg-4 mb-4">
-                              <label for="email" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="email" placeholder="Email" aria-label="Email">
-                          </div>
-                          <div class="col-md-12 col-lg-4 mb-4">
+                          <div class="col-md-12 col-lg-3 mb-4">
+                            <label for="email" class="form-label">Edad</label>
+                            <input type="number" class="form-control" id="edad" placeholder="Edad" aria-label="Edad">
+                    </div>
+                          <div class="col-md-12 col-lg-3 mb-4">
                               <label for="fecha" class="form-label">Fecha</label>
                               <input type="date" class="form-control" id="fecha" aria-label="Seleccionar fecha">
                           </div>
-                          <div class="col-md-12 col-lg-4">
+                          <div class="col-md-12 col-lg-3">
                               <label for="hora" class="form-label">Hora</label>
                               <select class="form-select" id="hora" aria-label="Seleccionar hora">
                                   <option selected>Hora</option>
@@ -146,7 +157,7 @@
         </div>
           <div class="row">
             <div class="col">
-            <div class="card bg-gray mb-5">
+            <div class="card shadow bg-gray mb-5">
                 <div class="card-body bg-gray p-4">
                     <h2 class="title-card mb-4">Confirmación de reserva</h2>
                     <div class="row mb-1">
@@ -194,8 +205,32 @@
         </div>
       </div>
   </section>
-  
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Cancelar cita</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text">Por favor, ingresá el número de tu cita para cancelarla. <br>Recordá que una vez cancelada, no podrás recuperarla.</p>
+          <form>
+            <div class="mb-3">
+              <label for="appointmentNumber" class="form-label">Número de cita</label>
+              <input type="text" class="form-control" id="appointmentNumber" placeholder="Ingresá el número de tu cita">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-form fw-bold">Cancelar cita</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
+
 <footer class="footer py-2">
     <div class="row d-none d-lg-flex p-0 m-0 align-items-center">
         <div class="col-1 text-start">
@@ -249,6 +284,7 @@
     <script src="../js/calculadora.js"></script>
     <script src="../js/date.js"></script>
     <script src="../js/form.js"></script>
+    <script src="../js/modalcancelarcita.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -184,3 +184,6 @@ footer {
     border-color: var(--color-black);
     border-width: 2px;
 }
+.btn-danger {
+    border-color: var(--color-black);
+}
