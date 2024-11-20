@@ -7,9 +7,8 @@
 :root {
     --color-white: #FFFFFF;
     --color-light-gray: #D9D9D9;
-    --color-gray: #B6B6B6;
-    --color-yellow: #FDCF3B;
-    --color-light-yellow: #FAE6A6;
+    --color-yellow: #E8D366;
+    --color-light-yellow: #F3E8A9;
     --color-black: #000000;
     --hover-button: #FFE066;
 }
@@ -26,7 +25,7 @@ body {
 
 /*NAV*/
 .bg-nav {
-    background-color: var(--color-yellow);
+    background-color: var(--color-light-gray);
 }
 .nav-link {
     color:var(--color-black);
@@ -142,7 +141,7 @@ body {
 
 /*FOOTER*/
 footer {
-    background-color:var(--color-gray);
+    background-color:var(--color-yellow);
 }
 .img-footer{
     width: 90%;
@@ -185,5 +184,8 @@ footer {
     border-width: 2px;
 }
 .btn-danger {
+    border-color: var(--color-black);
+}
+.btn-danger:hover {
     border-color: var(--color-black);
 }
